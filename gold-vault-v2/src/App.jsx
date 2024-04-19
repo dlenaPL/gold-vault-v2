@@ -6,6 +6,7 @@ import ProductCardMiniPage from './products/ProductCardMiniPage'
 import Footer from './footer/Footer'
 import PromoCalculator from './extras/PromoCalculator'
 
+
 function App() {
 
   return (

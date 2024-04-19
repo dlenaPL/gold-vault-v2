@@ -1,20 +1,21 @@
 
 import React from 'react'
-import './ProductCardMini.css'
-import goldBar1g from '../assets/gold-bars/valcambi_1g_gold_bar.png'
 
-function ProductCardMini() {
+import './ProductCardMini.css'
+
+
+function ProductCardMini({title, imgSrc, weight, price}) {
   return (
     <div className='mini-card-container txt-grey-light bg-black'>
          <div className='name-container'>
-            <h4 className='product-name'>Sztabka Valcambi</h4>
-            <h4 className='product-name product-weight'>1 gram</h4>
+            <h4 className='product-name'>{title}</h4>
+            <h4 className='product-name product-weight'>{weight}</h4>
         </div>
         <div className='img-container'>
-            <img className='product-img' src={goldBar1g} ></img>
+            <img className='product-img' src={imgSrc} alt="prod_img"></img>
         </div>
         <div className='price-container'>
-            <h4 className='product-price-tag'>PLN 324.68 </h4>
+            <h4 className='product-price-tag'>{price} </h4>
         </div>
        
         <div className='buy-btn-container'>
