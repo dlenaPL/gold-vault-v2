@@ -1,8 +1,5 @@
 import React from 'react'
 import './TopNavbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
 import NavItem from './NavItem';
 
 
