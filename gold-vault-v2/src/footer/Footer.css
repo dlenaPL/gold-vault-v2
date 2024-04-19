@@ -1,0 +1,220 @@
+
+
+
+.mints-bar{
+    background-color: #c9c9c9;
+    padding: 10px;
+}
+
+.mints-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.mint-item img{
+    width: 100px;
+    height: auto;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    
+}
+
+.footer-navbar a{
+    text-decoration: none;
+    color: #c9c9c9;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.newsletter-signup-container a{
+    text-decoration: none;
+    color: #c9c9c9;
+}
+
+.footer-navbar{
+    list-style: none;
+    margin-bottom: 10px;
+    margin: auto;
+}
+.footer-navbar li{
+    display: flex;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    border-bottom: #c9c9c9 solid 1px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.copyright-container{
+    margin: -10px;
+}
+
+.copyright-text{
+
+    margin-top: 10px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+.copyright-text h5{
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.go-up-container{
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.go-up-container a{
+    text-decoration: none;
+    color: #c9c9c9;
+    font-size: 1.2rem;
+}
+
+
+.wide-scr{
+    display: none;
+}
+
+.footer-navbar-big-screen{
+    display: none;
+}
+
+.newsletter-sign-up-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 5px;
+    align-items: center;
+    
+}
+
+.menu-item-header{
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-item-txt{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+
+.newsletter-sign-up-form{
+    padding: 10px;
+    height: auto;
+    font-size: 1.1rem;
+}
+
+.newsletter-sign-up-form input{
+    padding: 5px;
+    width: 200px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: solid black 1px;
+    
+}
+
+
+
+.newsletter-sign-up-form button{
+    padding: 5px;
+    max-width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #bfa75d;
+
+    
+}
+
+
+
+@media (min-width: 769px){
+
+    .footer-container{
+        margin-top: 15px;
+    }
+
+    .wide-scr{
+        display: flex;
+    }
+
+    .footer-navbar-big-screen{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        padding: 30px 0;
+    }
+
+    .footer-navbar-big-screen li{
+        margin: 10px 0;
+    }
+
+    .menu-item-header{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .menu-item-txt{
+        padding: 5px 0;
+        line-height: 1.5rem;
+    }
+
+    .footer-content{
+        display: none;
+    }
+
+    .more-about-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .more-about-list li{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .more-about-list a {
+        text-decoration: none;
+        color: #c9c9c9;
+        margin-right: 25px;
+    }
+
+    .newsletter-sign-up-content{
+        text-align: center;
+    }
+
+    .newsletter-sign-up-form{
+        margin-top: 10px;
+        padding: 10px 0;
+
+    }
+
+    .newsletter-sign-up-form button:hover{
+        cursor:pointer;
+        background-color: #ddc16b;
+    }
+
+}
