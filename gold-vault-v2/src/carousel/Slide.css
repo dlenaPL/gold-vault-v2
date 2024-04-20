@@ -8,8 +8,7 @@
 }
 
 .slide-img{
-    width: 100vw;
-    margin: 20px 0;
+    width: auto;
     padding: 10px;
     object-fit: contain;
 }
