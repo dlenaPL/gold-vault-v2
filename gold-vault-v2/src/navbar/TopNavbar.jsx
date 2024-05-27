@@ -9,12 +9,12 @@ function TopNavbar() {
         <nav className='top-navbar-content'>
             <ul className='top-navbar-list'>
                 <NavItem title='Złoto' dropdownitems ={[
-                  {name: 'Monety bulionowe', linkto: '/#'},
-                  {name: 'Monety historyczne', linkto: '/#'},
-                  {name: 'Sztabki', linkto: '/#'},
-                  {name: 'Bestsellery', linkto: '/#'},
-                  {name: 'Skup złota', linkto: '/#'},
-                  {name: 'Weryfikacja i wycena', linkto: '/#'},
+                  {name: 'Monety bulionowe', linkto: '/gold/bullion-coins'},
+                  {name: 'Monety historyczne', linkto: '/gold/historical-coin'},
+                  {name: 'Sztabki', linkto: '/gold/bars'},
+                  {name: 'Bestsellery', linkto: '/gold/bestsellers'},
+                  {name: 'Skup złota', linkto: '/gold/buy'},
+                  {name: 'Weryfikacja i wycena', linkto: '/gold/metal-verification'},
                  ]}/>
 
                  <NavItem title='Srebro' dropdownitems ={[

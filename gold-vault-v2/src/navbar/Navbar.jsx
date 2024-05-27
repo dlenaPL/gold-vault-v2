@@ -13,6 +13,9 @@ import { useState } from 'react'
 import SideNavbar from './SideNavbar'
 import NavbarPromo from './NavbarPromo'
 import TopNavbar from './TopNavbar'
+import { Link } from 'react-router-dom'
+import MainPage from '../mainPage/MainPage'
+import App from '../App'
 
 
 function Navbar() {
@@ -43,10 +46,12 @@ function Navbar() {
                         <a href='#'><FontAwesomeIcon className='icon' icon={faMagnifyingGlass}/></a>
                     </li>
                     <li>
-                        <div className='logo-container'>
-                            <img className='logo-icon' src={Logo}/>
-                            <span className='logo-text'>Gold Vault</span>
-                        </div>
+                       <Link to="/">
+                            <div className='logo-container'>
+                                <img className='logo-icon' src={Logo}/>
+                                <span className='logo-text'>Gold Vault</span>
+                            </div>
+                        </Link>
                     </li>
                     <li className='search-input-bar'>
                             <input type="text" placeholder="Szukaj..."/>
