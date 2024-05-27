@@ -122,9 +122,7 @@ function Footer() {
                 <h5>Wszelkie prawa zastrzeżone</h5>
             </span>
             <div className='go-up-container '>
-                <a href='#'>
-                    <FontAwesomeIcon className='go-up' icon={faChevronUp} />
-                </a> 
+                
             </div>
         </div>
     </div>

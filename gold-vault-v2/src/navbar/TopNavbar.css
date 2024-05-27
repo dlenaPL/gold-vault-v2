@@ -1,6 +1,7 @@
 
 .top-nav-container{
     display: none;
+    padding-bottom: 5px;
 }
 .top-navbar-list {
     list-style-type: none;
