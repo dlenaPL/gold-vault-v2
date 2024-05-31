@@ -54,6 +54,7 @@
 .simple-divider{
     height: 20px;
     background-color: #ffffffef;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 769px){

@@ -17,7 +17,6 @@ function ProductCardMiniPage({header, products}) {
       />)
   }
   
-  // {products ? console.log("test items: " + 'object: %O', products ) : null}
 
   return (
 

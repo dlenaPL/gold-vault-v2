@@ -31,7 +31,7 @@
 
 .add-to-cart-btn{
     text-decoration: none;
-    background-color: #bfa75d;
+    background-color: #ffde7daf;
     color: #222222;
 
     padding: 10px 15px;
@@ -39,6 +39,10 @@
     margin: auto;
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.add-to-cart-btn:hover{
+    background-color: #ffde7de8;
 }
 
 @media (min-width: 769px){

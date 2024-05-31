@@ -12,13 +12,13 @@ import GoldBuyPage from './goldBuyPage/GoldBuyPage'
 import MetalVeryficationPage from './metalVeryficationPage/MetalVeryficationPage'
 
 
+
 function App() {
 
   return (
     <div className='app-container'>
-      
       <BrowserRouter>
-      <Navbar/>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
           {/* zloto tab */}
@@ -29,11 +29,11 @@ function App() {
           <Route path="/gold/buy/" element={<GoldBuyPage/>}/>
           <Route path="/gold/metal-verification/" element={<MetalVeryficationPage/>}/>
           <Route path="*" element={<NoMatch/>}/>
-          
         </Routes>
         <Footer/>
+
       </BrowserRouter>
-      
+
     </div>
    
   )
