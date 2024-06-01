@@ -10,6 +10,9 @@ import GoldBarsPage from './goldBarsPage/GoldBarsPage'
 import GoldBestsellersPage from './goldBestsellersPage/GoldBestsellersPage'
 import GoldBuyPage from './goldBuyPage/GoldBuyPage'
 import MetalVeryficationPage from './metalVeryficationPage/MetalVeryficationPage'
+import ShoppingCart from './shoppingCart/ShoppingCart'
+import GoldCoinProductPage from './goldCoinProductPage/GoldCoinProductPage'
+import SilverCoinsPage from './silverCoinsPage/SilverCoinsPage'
 
 
 
@@ -23,11 +26,14 @@ function App() {
           <Route path="/" element={<MainPage/>}/>
           {/* zloto tab */}
           <Route path="/gold/bullion-coins/" element={<GoldCoinsPage/>}/>
-          <Route path="/gold/historical-coin/" element={<GoldHistoricalCoinsPage/>}/>
+          <Route path="/gold/historical-coins/" element={<GoldHistoricalCoinsPage/>}/>
           <Route path="/gold/bars/" element={<GoldBarsPage/>}/>
           <Route path="/gold/bestsellers/" element={<GoldBestsellersPage/>}/>
           <Route path="/gold/buy/" element={<GoldBuyPage/>}/>
           <Route path="/gold/metal-verification/" element={<MetalVeryficationPage/>}/>
+          <Route path='/shopping-cart' element={<ShoppingCart/>}/>
+          <Route path='/gold/coins/kangaroo-1oz' element={<GoldCoinProductPage/>}/>
+          <Route path='/silver/coins/' element={<SilverCoinsPage/>}/>
           <Route path="*" element={<NoMatch/>}/>
         </Routes>
         <Footer/>

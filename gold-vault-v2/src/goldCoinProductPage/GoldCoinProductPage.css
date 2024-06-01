@@ -1,0 +1,128 @@
+
+.product-panel{
+    display: flex;
+    width: 80vw;
+    max-width: 80vw;
+    background-color: rgba(250, 235, 215, 1.00);
+    margin: 50px auto;
+    padding: 30px;
+   
+
+}
+
+.product-img-panel{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    background-color: black;
+
+}
+
+
+
+.product-miniatures{
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    padding: 10px;
+    
+    
+}
+
+.product-image-big{
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    max-height: 400px;
+    margin-left: 25px;
+}
+
+
+.product-description-panel{
+    padding: 30px 45px;
+    margin: 0 auto;
+    color: beige;
+    background-color: black;
+}
+
+.product-table-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.product-table-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-amount{
+    display: flex;
+    
+}
+
+.product-amount div{
+
+    text-align: center;
+    margin: auto 0;
+}
+
+.item-description{
+    margin: auto 0;
+    align-items: center;
+}
+.item-control-amount{
+    padding: 10px 10px;
+    align-items: center;
+}
+.item-control-btn{
+    background-color: rgba(250, 235, 215, 0.60);
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.item-control-btn:hover{
+    background-color: rgba(185, 174, 160, 0.70);
+}
+.item-control-btn:active{
+    background-color: rgb(185, 174, 160);
+}
+
+
+
+.cashout-btn{
+    text-align: center;
+    margin: 40px auto 10px auto;
+    padding: 15px 35px;
+    max-width: 300px;
+    background-color: #e2c56fe8;
+    border-radius: 25px;
+    color: black;
+}
+
+.cashout-btn:hover{
+    background-color: #e2c56fc5;
+}
+
+.cashout-btn:active{
+    background-color: #e2c56fe8;
+}
+
+
+.description-long{
+    margin: 20px auto;
+    max-width: 80vw;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    background-color: rgba(250, 235, 215, 1.00);
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.description-long h3{
+    font-size: 1.3rem;
+    margin: 30px 0;
+}

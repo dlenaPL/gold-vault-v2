@@ -1,0 +1,87 @@
+
+.summary-container{
+    padding: 20px;
+}
+
+.summary-title{
+    padding: 15px 0;
+}
+
+.cart-value{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-value{
+    text-align: right;
+}
+
+.radio-group{
+    display: flex;
+    padding: 10px 0;
+}
+.radio-group input{
+    margin-right: 10px;
+}
+
+.shipping-method-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.shipping-method-cost{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.summary-cart-summary{
+    margin: 20px 0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid gray;
+}
+
+
+.coupon-apply-container{
+    display: flex;
+}
+
+.voucher-input{
+    background-color: #ffde7de8;
+    border: none;
+    border-bottom: solid 1px gray;
+    min-width: 15vw;
+}
+
+.apply-voucher-btn{
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.apply-voucher-btn:hover{
+    background-color: #e2c56fe8;
+}
+
+.apply-voucher-btn:active{
+    background-color: #fadb7ce8;
+}
+
+.cashout-btn{
+    text-align: center;
+    margin: 20px auto 10px auto;
+    padding: 15px 35px;
+    max-width: 300px;
+    background-color: #e2c56fe8;
+    border-radius: 25px;
+}
+
+.cashout-btn:hover{
+    background-color: #e2c56fc5;
+}
+
+.cashout-btn:active{
+    background-color: #e2c56fe8;
+}

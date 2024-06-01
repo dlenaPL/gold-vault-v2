@@ -69,10 +69,11 @@ function Navbar() {
                         
                     </li>
                     <li className='menu-elm-container'>
-                        <a href='#'>
+                        <Link to="/shopping-cart">
+
                             <FontAwesomeIcon className='icon' icon={faCartShopping} />
                             <h5 className='menu-item-text'>Koszyk</h5>
-                        </a>
+                        </Link>
                         
                     </li>
                 </ul>

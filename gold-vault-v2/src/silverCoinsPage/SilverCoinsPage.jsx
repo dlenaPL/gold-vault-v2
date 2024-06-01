@@ -1,30 +1,28 @@
 import React from 'react'
 import ProductCardMiniPage from '../products/ProductCardMiniPage'
-import {GoldBarsResources} from './GoldBarsResources'
-import "./GoldBarsPage.css"
+import {SilverCoinsResources} from './SilverCoinsResources'
+import "./SilverCoinsPage.css"
 import ProductPagginationList from './ProductPagginationList'
 
 
 
-function GoldBarsPage() {
+function SilverCoinsPage() {
   return (
     <div className='gold-page-container'>
       <div className='gold-page-content'>
         <div className='title'>
           <div className='title-text'>
-            <h2>Złote sztabki</h2>
+            <h2>Srebrne monety</h2>
           </div>
           <div className='title-paragraph'>
             <span>
-            Inwestycje w złote sztabki stanowią idealne rozwiązanie dla tych inwestorów, 
-            którzy w złocie upatrują formy długoterminowej lokaty kapitału i
-             cenią sobie bezpieczeństwo inwestycji. Podobnie jak monety bulionowe sztabki złota 
-             doskonale wpisują się w kanon produktów tworzonych bezpośrednio z myślą o inwestycji ze
-              względu na takie walory jak: wysoka próba, konkurencyjna cena w przeliczeniu na gram 
-              złota czy wysoka płynność. Wobec tego złote sztabki stanowią doskonałą odpowiedź na pytanie,
-               jak inwestować w złoto. Zważywszy, że jednym z czynników determinujących płynność danej sztabki 
-               złota oprócz jej wagi, jest jej popularność warto wybierać sztabki inwestycyjne, 
-            za których produkcję odpowiadają światowej sławy mennice, m.in.: Valcambi | Pamp | Perth Mint.
+            Gold Vault jest niekwestionowanym liderem w zakresie dystrybucji inwestycyjnych
+             metali szlachetnych w krajach Europy Północnej oraz jednym z wiodących 
+             podmiotów w Europie Środkowej, a także Południowo-Wschodniej. Przeszło 
+             30 lat obecności na rynku pozwoliło nam nawiązać trwałe relacje z największymi 
+             mennicami produkującymi srebro, takimi jak PAMP, Valcambi, Münze Österreich, The 
+             Royal Mint czy Perth Mint. Dzięki temu mamy możliwość oferować klientom
+             srebro inwestycyjne w najbardziej konkurencyjnych cenach w kraju - co istotne z dostępnością od ręki!
             </span>  
           </div>    
         </div>  
@@ -34,7 +32,7 @@ function GoldBarsPage() {
             <div className='gold-menu-btn sort-btn'>Sortuj</div>
           </div>
           <div className='product-list'>
-            <ProductCardMiniPage header="" products={GoldBarsResources}/> 
+            <ProductCardMiniPage header="" products={SilverCoinsResources}/> 
           </div>
           <div className='paggination-container'>
             <ProductPagginationList/>
@@ -62,4 +60,4 @@ function GoldBarsPage() {
   )
 }
 
-export default GoldBarsPage
+export default SilverCoinsPage

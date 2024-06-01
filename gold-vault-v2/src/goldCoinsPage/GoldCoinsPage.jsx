@@ -27,8 +27,8 @@ function GoldCoinPage() {
         </div>  
         <div className='products-container'>
           <div className='menu'>
-            <div className='gold-coins-menu-btn filter-btn'>Filtruj</div>
-            <div className='gold-coins-menu-btn sort-btn'>Sortuj</div>
+            <div className='gold-menu-btn filter-btn'>Filtruj</div>
+            <div className='gold-menu-btn sort-btn'>Sortuj</div>
           </div>
           <div className='product-list'>
             <ProductCardMiniPage header="" products={GoldCoinsResources}/> 

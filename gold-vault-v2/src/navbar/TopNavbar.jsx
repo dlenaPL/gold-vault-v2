@@ -18,7 +18,7 @@ function TopNavbar() {
                  ]}/>
 
                  <NavItem title='Srebro' dropdownitems ={[
-                  {name: 'Monety bulionowe', linkto: '/#'},
+                  {name: 'Monety bulionowe', linkto: '/silver/coins/'},
                   {name: 'Monety historyczne', linkto: '/#'},
                   {name: 'Sztabki', linkto: '/#'},
                   {name: 'Bestsellery', linkto: '/#'},

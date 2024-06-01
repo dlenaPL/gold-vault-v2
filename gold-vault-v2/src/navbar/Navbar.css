@@ -2,6 +2,15 @@
 
 .navbar-container{
     padding: 5px 10px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.navabar-items{
+    margin: 0 auto;
+    align-items: center;
 }
 
 .navbar-list{
@@ -9,6 +18,7 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
+
     
 }
 
@@ -49,6 +59,10 @@
 
 .top-nav-container{
     display: none;
+}
+
+.menu-elm-container:hover{
+    scale: 1.05;
 }
 
 @media (min-width: 769px){
@@ -109,6 +123,8 @@
         
     
     }
+
+    
 
     .menu-item-text{
         display: block;

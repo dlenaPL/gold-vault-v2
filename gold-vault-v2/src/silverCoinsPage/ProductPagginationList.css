@@ -1,0 +1,35 @@
+.paggination-list{
+    display: flex;
+    list-style: none;
+    margin-left: 35px;
+}
+
+.paggination-item{
+
+    padding: 15px 20px;
+    margin-right: 10px;
+
+    background-color: rgba(250, 235, 215, 0.75);
+    align-content: center;
+    
+}
+
+.paggination-item:hover{
+    cursor: pointer;
+    background-color: rgba(250, 235, 215, 1.00);
+
+}
+
+.paggination-item:active {
+    background-color: rgba(255, 239, 219, 0.65);
+}
+
+
+.paggination-item p{
+    font-size: 18px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
