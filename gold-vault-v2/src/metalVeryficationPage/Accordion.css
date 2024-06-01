@@ -16,7 +16,8 @@
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #c9c9c9;
+    background-color: #c9c9c9; 
+    font-size: 1.25rem;
   }
   
   .accordion-title:hover {
@@ -30,6 +31,7 @@
   
   .accordion-content {
     background-color: #e7e7e7ef;
+    line-height: 2rem;
     
     
   }

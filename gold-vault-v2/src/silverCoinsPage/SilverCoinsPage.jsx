@@ -40,13 +40,15 @@ function SilverCoinsPage() {
           <div className='summarry-container'>
             <div className='summary-content'>
               <span>
-                Inwestycje w złote monety stanowią formę lokaty dla inwestorów poszukujących długoterminowego 
-                zabezpieczenia kapitału. Podobnie jak złote sztabki inwestycyjne są szczególnie chętnie wybierane ze 
-                względu na liczne walory inwestycyjne, takie jak: wysoka próba, atrakcyjna cena w przeliczeniu na gram złota czy 
-                duża płynność i stanowią odpowiedź na pytanie, jak inwestować w złoto. Ostatnia z wymienionych cech jest szczególnie 
-                charakterystyczna dla monet takich, jak Krugerrand, Wiedeńscy Filharmonicy, Amerykański Orzeł, Kanadyjski Liść Klonowy, 
-                Australijski Kangur czy Brytyjska Britannia, które cieszą się szeroką rozpoznawalnością w 
-                każdym zakątku naszego globu, a za ich produkcję odpowiadają najbardziej renomowane mennice.
+                Metal szlachetny jakim jest srebro to obok złota jedna z najpopularniejszych 
+                form lokowania kapitału w kruszcach. Zarówno srebrne monety bulionowe jak 
+                i srebrne sztabki inwestycyjne doskonale sprawdzą się jako uzupełnienie portfeli 
+                tych inwestorów, którzy zdają sobie sprawę z istoty dywersyfikacji w kontekście budowania
+                portfela inwestycyjnego. Inwestycje w srebrne monety bulionowe są chętnie wybierane ze względu 
+                na szereg walorów, takich jak: wysoka próba, atrakcyjna cena w przeliczeniu na gram srebra czy 
+                duża płynność i stanowią odpowiedź na pytanie, jak inwestować w srebro fizyczne.
+                Inwestowanie w srebrne monety bulionowe stanowi rozwiązanie dla tych inwestorów, 
+                którzy upatrują w tym kruszcu długoterminowej lokaty kapitału i cenią sobie bezpieczeństwo inwestycji.
               </span>
             </div>
           </div>

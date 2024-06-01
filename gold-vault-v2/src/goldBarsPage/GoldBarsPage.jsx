@@ -42,13 +42,14 @@ function GoldBarsPage() {
           <div className='summarry-container'>
             <div className='summary-content'>
               <span>
-                Inwestycje w złote monety stanowią formę lokaty dla inwestorów poszukujących długoterminowego 
-                zabezpieczenia kapitału. Podobnie jak złote sztabki inwestycyjne są szczególnie chętnie wybierane ze 
-                względu na liczne walory inwestycyjne, takie jak: wysoka próba, atrakcyjna cena w przeliczeniu na gram złota czy 
-                duża płynność i stanowią odpowiedź na pytanie, jak inwestować w złoto. Ostatnia z wymienionych cech jest szczególnie 
-                charakterystyczna dla monet takich, jak Krugerrand, Wiedeńscy Filharmonicy, Amerykański Orzeł, Kanadyjski Liść Klonowy, 
-                Australijski Kangur czy Brytyjska Britannia, które cieszą się szeroką rozpoznawalnością w 
-                każdym zakątku naszego globu, a za ich produkcję odpowiadają najbardziej renomowane mennice.
+              Gold Vault należy do grona oficjalnych dystrybutorów największych 
+              światowych mennic. Dzięki bezpośredniej współpracy jest w stanie oferować
+               klientom złoto inwestycyjne (w tym sztabki złota) od renomowanych producentów w 
+               bardzo atrakcyjnych cenach biorąc pod uwagę dostępność od ręki. Inwestowanie w sztabki
+                lokacyjne w Gold Vault jest tożsame z wyborem produktów najwyższej jakości, które cechuje autentyczność 
+                potwierdzona przez certyfikat i szeroka rozpoznawalność.
+Niezależnie, czy rozważasz zakup sztabki o wadze 1 g, czy interesuje Cię złota sztabka 1 oz, a może inwestycje w duże sztabki o wadze 1 kg -
+ dzięki szerokiemu asortymentowi złota w ofercie Gold Vault z pewnością znajdziesz produkt dostosowany do swoich potrzeb.
               </span>
             </div>
           </div>

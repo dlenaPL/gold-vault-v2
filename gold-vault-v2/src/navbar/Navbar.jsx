@@ -68,7 +68,7 @@ function Navbar() {
                        
                         
                     </li>
-                    <li className='menu-elm-container'>
+                    <li className='menu-elm-container shopping-cart-icon'>
                         <Link to="/shopping-cart">
 
                             <FontAwesomeIcon className='icon' icon={faCartShopping} />

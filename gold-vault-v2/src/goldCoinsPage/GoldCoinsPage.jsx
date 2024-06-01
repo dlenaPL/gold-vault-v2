@@ -49,12 +49,8 @@ function GoldCoinPage() {
               </span>
             </div>
           </div>
-
       </div>
-
       </div>
-      
-      
     </div>
   )
 }

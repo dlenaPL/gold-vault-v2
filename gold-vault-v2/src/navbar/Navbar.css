@@ -24,7 +24,7 @@
 
 .navbar-list li{
     padding: 5px;
-    margin: 0 5px;
+    
 }
 
 .navbar-list a {
@@ -65,9 +65,14 @@
     scale: 1.05;
 }
 
+.shopping-cart-icon{
+    margin-right: 100px;
+}
+
 @media (min-width: 769px){
     .navbar-items{
         width: 80vw;
+        margin: 0 auto;
     }
 
     .icon{
@@ -83,11 +88,10 @@
     }
 
     .navbar-list{
+        max-width: 80vw;
         margin: 0 15px;
     }
-    .navbar-list li{
-        margin-right: 20px;
-    }
+
     
     .logo-icon{
         height: 60px;
