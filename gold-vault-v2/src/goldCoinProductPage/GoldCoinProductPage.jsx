@@ -39,7 +39,7 @@ function GoldCoinProductPage() {
                      </div>
                     <div>9471 zł</div>
                 </div>
-                <div className='cashout-btn'>Do kasy</div>
+                <div className='cashout-btn'>Do koszyka</div>
             </div>
         </div>
         <div className='description-long'>

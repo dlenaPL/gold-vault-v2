@@ -1,10 +1,16 @@
 
 .navbar-promo-container{
     padding: 5px;
+    
 }
 
 .navbar-promo{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    
+}
+
+.navbar-promo-text{
+    margin-left: 20px;
 }

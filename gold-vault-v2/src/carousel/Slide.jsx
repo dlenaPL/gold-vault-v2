@@ -2,6 +2,7 @@ import React from 'react'
 
 import coins from '../assets/coins.png'
 import './Slide.css'
+import { Link } from 'react-router-dom';
 
 function Slide() {
   return (
@@ -17,7 +18,7 @@ function Slide() {
             </div>
             <img className='slide-img' src={coins}/>
             <div className='btn-container'>
-                <a className='slide-action-btn txt-black bg-gold' href='#'>Sprawdź ofertę!</a>
+                <Link to='/products' className='slide-action-btn txt-black bg-gold' >Sprawdź ofertę!</Link>
             </div>
         </div>
         <div className='simple-divider'></div>

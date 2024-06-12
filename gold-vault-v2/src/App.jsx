@@ -13,6 +13,9 @@ import MetalVeryficationPage from './metalVeryficationPage/MetalVeryficationPage
 import ShoppingCart from './shoppingCart/ShoppingCart'
 import GoldCoinProductPage from './goldCoinProductPage/GoldCoinProductPage'
 import SilverCoinsPage from './silverCoinsPage/SilverCoinsPage'
+import ProductList from './products/ProductList'
+import ProductPage from './products/ProductPage'
+
 
 
 
@@ -34,6 +37,9 @@ function App() {
           <Route path='/shopping-cart' element={<ShoppingCart/>}/>
           <Route path='/gold/coins/kangaroo-1oz' element={<GoldCoinProductPage/>}/>
           <Route path='/silver/coins/' element={<SilverCoinsPage/>}/>
+          <Route path='/products/' element={<ProductList/>}/>
+          <Route path='/products/:id' element={<ProductPage />}></Route>
+
           <Route path="*" element={<NoMatch/>}/>
         </Routes>
         <Footer/>

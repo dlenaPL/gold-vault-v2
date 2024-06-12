@@ -10,6 +10,7 @@ function ProductCardMiniPage({header, products}) {
     dataArray = products.map(product => 
       <ProductCardMini 
         key={product.id}
+        id={product.id}
         title={product.title} 
         imgSrc={product.imgSrc}
         weight={product.weight}  
