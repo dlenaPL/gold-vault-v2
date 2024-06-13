@@ -1,5 +1,7 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import './App.css'
+import React, { useState, useEffect } from 'react';
+import Products from './products/Products';
 import Navbar from './navbar/Navbar'
 import Footer from './footer/Footer'
 import MainPage from './mainPage/MainPage'
@@ -17,12 +19,14 @@ import ProductList from './products/ProductList'
 import ProductPage from './products/ProductPage'
 
 
-
-
 function App() {
 
+
+
   return (
+
     <div className='app-container'>
+
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -47,8 +51,10 @@ function App() {
       </BrowserRouter>
 
     </div>
+
    
   )
 }
 
 export default App
+

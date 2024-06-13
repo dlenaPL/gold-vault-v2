@@ -2,92 +2,45 @@ import React from 'react'
 import Slide from '../carousel/Slide'
 import ProductCardMiniPage from '../products/ProductCardMiniPage'
 import PromoCalculator from '../extras/PromoCalculator'
-
-import gb1oz from'../assets/gold-bars/valcambi_1oz_gold_bar.png'
-import gb1g from'../assets/gold-bars/valcambi_1g_gold_bar.png'
-import gb5g from'../assets/gold-bars/valcambi_5g_gold_bar.png'
-import gb10g from'../assets/gold-bars/valcambi_10g_gold_bar.png'
-
-import kangaroo from '../assets/gold-coins/1-oz-australian-kangaroo.jpg'
-import philh from '../assets/gold-coins/austrian-philharmonicer-2024-1oz-gold-obverse-2.png'
-import brit from '../assets/gold-coins/britannia-1-oz-gold-coin-reverse-2024.png'
-import krug from '../assets/gold-coins/krugerrand-gold-coin-1-oz-reverse.png'
-
-
-
-
-const bars = [
-  {
-    id: 1,
-    title: "Sztabka Valcambi",
-    imgSrc: gb1g,
-    weight: "1g",
-    price: "380,00 PLN"
-  },
-  {
-    id: 2,
-    title: "Sztabka Valcambi",
-    imgSrc: gb5g,
-    weight: "5g",
-    price: "1660,00 PLN"
-  },
-  {
-    id: 3,
-    title: "Sztabka Valcambi",
-    imgSrc: gb10g,
-    weight: "10g",
-    price: "3276,00 PLN"
-  },
-  {
-    id: 4,
-    title: "Sztabka Valcambi",
-    imgSrc: gb1oz,
-    weight: "1oz",
-    price: "9917,00 PLN"
-  },
-];
-
-
-const coins = [
-  {
-    id: 101,
-    title: "Australijski Kangur",
-    imgSrc: kangaroo,
-    weight: "1oz",
-    price: "9917,00 PLN"
-  },
-  {
-    id: 102,
-    title: "Złoty Filharmonik",
-    imgSrc: philh,
-    weight: "1oz",
-    price: "9917,00 PLN"
-  },
-  {
-    id: 103,
-    title: "Złota Britannia",
-    imgSrc: brit,
-    weight: "1oz",
-    price: "9917,00 PLN"
-  },
-  {
-    id: 104,
-    title: "Złoty Krugerrand",
-    imgSrc: krug,
-    weight: "1oz",
-    price: "9917,00 PLN"
-  }
-];
-
+import './MainPage.css'
+import Products from '../products/Products'
 
 
 function MainPage() {
+
+  function getRandomInt(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+  }
+
+  const prodListSize = Products.length;
+
+  function fillArray(arr){
+      let temp = [];
+      while(temp.length < 4){
+        let p = getRandomInt(0, prodListSize)
+        if(temp.indexOf(p) === -1) temp.push(p);
+      }
+      temp.forEach(elm => {
+        arr.push(Products[elm])
+      });
+  }
+  
+  const forYou = [];
+  const topProds = [];
+
+  fillArray(forYou)
+  fillArray(topProds)
+
   return (
     <div className='mainPage-container'>
-        <Slide/>
-        <ProductCardMiniPage header="Polecane produkty" products={bars}/>
-        <PromoCalculator/>
-        <ProductCardMiniPage header="Polecane dla Ciebie" products={coins}/>
+      <Slide/>
+      <h4 className='productList-header'>Polecane dla Ciebie</h4>
+      <ProductCardMiniPage header="Polecane produkty" products={forYou}/>
+      <PromoCalculator/>
+      <h4 className='productList-header'>Najczęsciej kupowane</h4>
+      <ProductCardMiniPage header="Polecane dla Ciebie" products={topProds}/>
     </div>
     
   )

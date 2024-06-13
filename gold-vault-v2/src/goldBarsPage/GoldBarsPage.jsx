@@ -1,12 +1,20 @@
 import React from 'react'
 import ProductCardMiniPage from '../products/ProductCardMiniPage'
-import {GoldBarsResources} from './GoldBarsResources'
+import Products from '../products/Products'
 import "./GoldBarsPage.css"
 import ProductPagginationList from './ProductPagginationList'
 
 
 
 function GoldBarsPage() {
+
+  const goldBars = [];
+  Products.forEach(elm =>{
+    if(elm.id > 0 && elm.id <= 100){
+      goldBars.push(elm);
+    }
+  })
+
   return (
     <div className='gold-page-container'>
       <div className='gold-page-content'>
@@ -34,7 +42,7 @@ function GoldBarsPage() {
             <div className='gold-menu-btn sort-btn'>Sortuj</div>
           </div>
           <div className='product-list'>
-            <ProductCardMiniPage header="" products={GoldBarsResources}/> 
+            <ProductCardMiniPage header="" products={goldBars}/> 
           </div>
           <div className='paggination-container'>
             <ProductPagginationList/>
