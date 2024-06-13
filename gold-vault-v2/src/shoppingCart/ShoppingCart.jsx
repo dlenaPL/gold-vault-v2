@@ -4,8 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import ShoppingCartItem from './ShoppingCartItem'
 import ShoppingCartSummary from './ShoppingCartSummary'
+import {useContext} from 'react'
+import Products from '../products/Products'
+import { ShopContext } from '../context/ShopContext'
+
 
 function ShoppingCart() {
+
+const {cartItems} = useContext(ShopContext);
+
   return (
     <div className='shopping-cart-container'>
         <div className='shopping-cart-title'>
@@ -20,9 +27,17 @@ function ShoppingCart() {
                     <h3>Cena z vat</h3>
                 </div>
                 <div className='product-item'>
-                    <ShoppingCartItem/>
-                    <ShoppingCartItem/>
-                    <ShoppingCartItem/>
+                    {Products.map((product)=>{
+                        if(cartItems[product.id] !== 0){
+                            return <ShoppingCartItem 
+                            key={product.id}
+                            id={product.id}
+                            title={product.title} 
+                            imgSrc={product.imgSrc}
+                            weight={product.weight}  
+                            price={product.price}/>
+                        }
+                    })}
                 </div>
             </div>
             <div className='shopping-cart-summary'>
@@ -34,3 +49,4 @@ function ShoppingCart() {
 }
 
 export default ShoppingCart
+

@@ -1,9 +1,13 @@
 
-import React from 'react'
+import React, { useContext } from 'react'
 import './ProductCardMini.css'
 import { Link } from 'react-router-dom';
+import { ShopContext } from '../context/ShopContext';
 
 function ProductCardMini({id, title, imgSrc, weight, price}) {
+
+  const {addToCart, cartItems} = useContext(ShopContext);
+
   return (
     <div className='mini-card-container txt-grey-light bg-black'>
       <Link to={`/products/${id}`}>
@@ -17,9 +21,9 @@ function ProductCardMini({id, title, imgSrc, weight, price}) {
         <div className='price-container'>
             <h4 className='product-price-tag'>{price} </h4>
         </div>
-        </Link>
+     </Link>
         <div className='buy-btn-container'>
-            <a className='add-to-cart-btn' href='#'>Do koszyka</a>
+            <a className='add-to-cart-btn' onClick={()=>addToCart(id)}>Do koszyka</a>
         </div>
     </div>
   )

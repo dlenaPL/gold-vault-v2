@@ -17,6 +17,7 @@ import GoldCoinProductPage from './goldCoinProductPage/GoldCoinProductPage'
 import SilverCoinsPage from './silverCoinsPage/SilverCoinsPage'
 import ProductList from './products/ProductList'
 import ProductPage from './products/ProductPage'
+import ShopContextProvider from './context/ShopContext';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
   return (
 
     <div className='app-container'>
-
+      <ShopContextProvider>
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -49,7 +50,7 @@ function App() {
         <Footer/>
 
       </BrowserRouter>
-
+      </ShopContextProvider>
     </div>
 
    
