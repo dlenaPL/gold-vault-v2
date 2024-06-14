@@ -13,6 +13,7 @@ function ShoppingCart() {
 
 const {cartItems} = useContext(ShopContext);
 
+
   return (
     <div className='shopping-cart-container'>
         <div className='shopping-cart-title'>

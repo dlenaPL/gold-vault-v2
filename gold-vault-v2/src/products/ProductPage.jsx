@@ -2,11 +2,19 @@ import React from 'react'
 import { useParams } from "react-router-dom";
 import Products from './Products'
 import '../goldCoinProductPage/GoldCoinProductPage.css'
+import { ShopContext } from '../context/ShopContext'
+import {useContext} from 'react'
 
 function ProductPage() {
 
     let { id } = useParams();
     const product = Products.find(product => String(product.id) === id);
+    const {cartItems, addToCart, removeFromCart, updateCartItemAmount} = useContext(ShopContext);
+
+    const addTo = (id)=>{
+        addToCart(id);
+        removeFromCart(id);
+    }
 
   return (
     <section key={id}>
@@ -37,13 +45,13 @@ function ProductPage() {
                     {product.weight}
                     </div>
                     <div className='product-amount'>
-                        <div className='item-control-btn'>-</div>
-                        <div className='item-control-amount'> 1 </div>
-                        <div className='item-control-btn'>+</div>
+                        <div className='item-control-btn' onClick={()=>removeFromCart(id)}>-</div>
+                        <div className='item-control-amount'> <input value={cartItems[id]} onChange={(e)=> updateCartItemAmount(Number(e.target.value), id)}/> </div>
+                        <div className='item-control-btn' onClick={()=>addToCart(id)}>+</div>
                      </div>
                     <div>{product.price}</div>
                 </div>
-                <div className='cashout-btn'>Do koszyka</div>
+                <div className='cashout-btn' onClick={()=>addTo(id)}>Do koszyka</div>
             </div>
         </div>
         <div className='description-long'>

@@ -48,3 +48,8 @@
     margin: auto 0;
     height: 2rem;
 }
+
+.item-control-amount input {
+    max-width: 2rem;
+    text-align: center;
+}
