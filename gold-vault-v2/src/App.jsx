@@ -32,7 +32,6 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          {/* zloto tab */}
           <Route path="/gold/bullion-coins/" element={<GoldCoinsPage/>}/>
           <Route path="/gold/historical-coins/" element={<GoldHistoricalCoinsPage/>}/>
           <Route path="/gold/bars/" element={<GoldBarsPage/>}/>

@@ -61,10 +61,6 @@ function ProductPage() {
             </span>
         </div>
     </div>
-                {/* <img src={product.imgSrc} alt=""></img>
-                <div>
-                    <h3>{product.title}</h3>
-                </div> */}
     </section>
   )
 }

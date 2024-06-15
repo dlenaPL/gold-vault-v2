@@ -5,6 +5,8 @@ import './ProductCardMiniPage.css'
 
 function ProductCardMiniPage({header, products}) {
 
+  
+
   let dataArray = []; 
   if(products){
     dataArray = products.map(product => 

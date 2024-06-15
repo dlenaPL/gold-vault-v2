@@ -3,6 +3,7 @@ import './ShoppingCartSummary.css'
 import {useContext} from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { useState } from 'react'
+import vouchers from '../context/vouchers'
 
 
 
@@ -12,6 +13,24 @@ function ShoppingCartSummary() {
     const total = getTotal();
     const [shippingCost, setShippingCost] = useState();
 
+    const applyVoucher = ()=>{
+        let userEntered = document.getElementById("voucher-input").value;
+        let isValid = false;
+        let voucherErr = document.getElementById("voucher-msg")
+        vouchers.forEach(elm => {
+            if(userEntered.toLowerCase() === elm){
+                isValid = true;
+                setShippingCost(0);
+                voucherErr.innerText = "Zastosowano kupon"
+                voucherErr.style.display = "inline"
+                setTimeout(
+                    function() {
+                      voucherErr.style.display = "none"
+                    }, 1000);
+            }
+        });
+        
+    }
 
   return (
     <div className='summary-container'>
@@ -58,11 +77,13 @@ function ShoppingCartSummary() {
                 Jeśli posiadasz, wpisz kod rabatowy:
             </div>
             <div className='coupon-apply-container'>
-                <input className='voucher-input' type="text" placeholder=""/>
-                <div className='apply-voucher-btn'>
+                <input className='voucher-input' id="voucher-input" type="text" placeholder=""/>
+                <div className='apply-voucher-btn' onClick={applyVoucher}>
                     {'>>'}
                 </div>
+                
             </div>
+            <label id="voucher-msg"></label>
         </div>
         <div className='cashout-btn'>Do kasy</div>
     </div>

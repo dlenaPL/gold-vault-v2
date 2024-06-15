@@ -85,3 +85,9 @@
 .cashout-btn:active{
     background-color: #e2c56fe8;
 }
+
+#voucher-msg{
+    display: none;
+    padding: 5px;
+    background-color: rgb(63, 243, 63);
+}
