@@ -29,8 +29,9 @@ function ShoppingCartSummary() {
                     }, 1000);
             }
         });
-        
     }
+
+ 
 
   return (
     <div className='summary-container'>
@@ -86,6 +87,7 @@ function ShoppingCartSummary() {
             <label id="voucher-msg"></label>
         </div>
         <div className='cashout-btn'>Do kasy</div>
+       
     </div>
   )
 }

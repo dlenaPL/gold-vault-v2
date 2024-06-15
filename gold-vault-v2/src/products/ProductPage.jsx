@@ -11,10 +11,23 @@ function ProductPage() {
     const product = Products.find(product => String(product.id) === id);
     const {cartItems, addToCart, removeFromCart, updateCartItemAmount} = useContext(ShopContext);
 
+    
+
     const addTo = (id)=>{
+        
         addToCart(id);
         removeFromCart(id);
+        let buttonPopUp = document.getElementById("popUp");
+        buttonPopUp.style.display = "inline"
+                setTimeout(
+                    function() {
+                        buttonPopUp.style.display = "none"
+                    }, 1000);
     }
+
+
+
+
 
   return (
     <section key={id}>
@@ -52,6 +65,7 @@ function ProductPage() {
                     <div>{product.price}</div>
                 </div>
                 <div className='cashout-btn' onClick={()=>addTo(id)}>Do koszyka</div>
+                <p id="popUp">Produkty dodano do koszyka</p>
             </div>
         </div>
         <div className='description-long'>

@@ -50,6 +50,16 @@ a{
     color: #c9c9c9;
 }
 
+
+#popUp{
+    text-align: center;
+    padding: 5px;
+    max-width: 250px;
+    background-color: rgb(193, 132, 250);
+    margin: auto;
+    display: none;
+}
+
 @media (min-width: 769px){
 
     .img-container{
@@ -72,3 +82,4 @@ a{
 
 
 }
+

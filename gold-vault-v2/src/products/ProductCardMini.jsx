@@ -7,6 +7,7 @@ import { ShopContext } from '../context/ShopContext';
 function ProductCardMini({id, title, imgSrc, weight, price}) {
 
   const {addToCart, cartItems} = useContext(ShopContext);
+  
 
   return (
     <div className='mini-card-container txt-grey-light bg-black'>
@@ -24,7 +25,9 @@ function ProductCardMini({id, title, imgSrc, weight, price}) {
      </Link>
         <div className='buy-btn-container'>
             <a className='add-to-cart-btn' onClick={()=>addToCart(id)}>Do koszyka</a>
+           
         </div>
+       
     </div>
   )
 }
